@@ -1,3 +1,0 @@
-### WE
-## ARE
-# Quarry Scaaaaan
