@@ -1,0 +1,61 @@
+<section id="viewer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <babylon model="/img/mesh/testplymesh.glb"></babylon>
+                    <!--<canvas id="renderCanvas" touch-action="none"></canvas> flytt hit touch-action="none" for best results from PEP -->
+                <!--<script>
+                    const canvas = document.getElementById("renderCanvas"); // Get the canvas element
+                    const engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
+
+                    // Add your code here matching the playground format
+                    //  --
+
+
+                    var createScene = async function () {
+                        // This creates a basic Babylon Scene object (non-mesh)
+                        var scene = new BABYLON.Scene(engine);
+
+                        scene.clearColor = new BABYLON.Color3(0.31, 0.48, 0.64);
+
+
+                        var camera = new BABYLON.ArcRotateCamera("camera", BABYLON.Tools.ToRadians(125), BABYLON.Tools.ToRadians(70), 25, new BABYLON.Vector3(0, 3, 0), scene);
+
+                        camera.lowerRadiusLimit = 10;
+                        //camera.upperRadiusLimit = 40;
+
+                        // This attaches the camera to the canvas
+                        camera.attachControl(canvas, true);
+
+                        //Load the tower assets
+                        //pirateFortImport.meshes[0].name = "pirateFort"
+                        //scene.getMeshByName("sea").material.needDepthPrePass = true;
+                        //scene.getLightByName("Sun").intensity = 12;
+
+
+
+                        //Load the tower assets
+                        const testmeshimport = await BABYLON.SceneLoader.ImportMeshAsync("", "/img/mesh/", "test_mesh.glb", scene);
+                    
+                    return scene;
+
+                    };
+                    // --
+
+
+
+                    const scene = createScene(); //Call the createScene function
+                    // Register a render loop to repeatedly render the scene
+                    engine.runRenderLoop(function () {
+                            scene.render();
+                    });
+
+                    // Watch for browser/canvas resize events
+                    window.addEventListener("resize", function () {
+                            engine.resize();
+                    });
+                </script>  -->
+            </div><!-- / col-->
+</div> <!-- / row-->
+</div>
+</section>

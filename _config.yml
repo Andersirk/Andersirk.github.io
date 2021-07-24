@@ -1,5 +1,12 @@
-theme: jekyll-theme-slate
-title: Quarry Scan AS
-github:
-is_project_page: false
+# Site settings
+title: "QuarryScan"
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://quarryscan.no" # the base hostname & protocol for your site
 
+vebjorn_email: "Vebjorn@quarryscan.no"
+anders_email: "Anders@quarryscan.no"
+
+# Build settings
+markdown: kramdown
